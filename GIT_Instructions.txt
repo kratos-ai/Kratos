@@ -1,0 +1,18 @@
+Scot:
+    craete a git instance
+    * git init
+
+    connect the git instance to a repository
+    * git remote add origin master linked copied form git page
+
+    pulls the code from git
+    * git pull
+
+    change branch
+    * git checkout branch name
+
+    git branch
+    * show you the branch you are currently in
+
+Yikun:
+    * git branch -m new_name
