@@ -1,0 +1,8 @@
+name: Adam
+dependencies:
+  - python=3.6
+  - pandas
+  - matplotlib
+  - flask
+  - pip:
+    - tf-nightly-gpu
