@@ -2,6 +2,10 @@ site_name: Kratos Documentation
 site_description: Kratos Clothing Recognition AI
 site_author: Kratos Capstone Team
 
+repo_name: kratos-ai/Kratos
+repo_url: https://github.com/kratos-ai/Kratos
+edit_uri: ""
+
 theme:
     name: material
     palette:

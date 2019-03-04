@@ -18,8 +18,6 @@ Your Conda environment is now setup. Setup will not need to be run again. To act
 
     conda activate <environment>
 
->[TODO](TODO) - We will have to create yml files with environment names identical to the file name.
-
 Your Conda environment is now installed and activated. To deactivate the environment, use the following command:
 
     conda deactivate
