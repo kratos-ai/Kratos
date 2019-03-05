@@ -1,19 +1,10 @@
 # Kratos
 
-Instructions for running on PSU machines.  
-
 Clone Kratos Repo:  
-    git clone https://github.com/ZackSalah/Kratos.git  
-    cd Kratos  
-Checkout remory_attributes branch:  
-	git fetch origin  
-	git checkout -b remory_attributes origin/remory_attributes  
+    git clone https://github.com/kratos-ai/Kratos.git
 
-Start kinit session and SSH to a GPU server  
+Create conda environment:
+    conda env create -f environment.yml
 
-Install pandas:  
-	  pip install pandas  
-Install sklearn package:  
-	  pip install scikit-learn  
 Run training:  
-	  python attributeML.py
+	  python attributes.py

@@ -19,7 +19,7 @@ This Kratos branch is one of two attempt to make model and an agent to predict s
 * Download the DeepFashion data set http://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html
 
 ## Weights
-* Zack\\Attributes CNN Model\\models
+* /models/
 
 ## Conda and CUDA
 * Conda 4.6.4
@@ -32,7 +32,7 @@ This Kratos branch is one of two attempt to make model and an agent to predict s
 * Tensorflow 1.12.0
 
 # Installation
-* git clone origin Zack
+* git clone https://github.com/kratos-ai/Kratos.git
 ## Environment installation
 	* Note: If you want the tensorflow-gpu, simply modify the environment.yml to add tensorflow-gpu instead of the CPU version
 	* Note: If you want to make the environment in a specific path, simply add -p path\environment_name at the end of the command
@@ -53,7 +53,7 @@ This Kratos branch is one of two attempt to make model and an agent to predict s
 ```
 
 ## Predict via trained model
-* Note: you may download the weights from Zack\\Attributes CNN Model\\models and simply use it
+* Note: you may download the weights from /models/ and simply use it
 * Open Agent.py and change the dir_models and image_path variables appropriately
 ```
 	python Agent.py

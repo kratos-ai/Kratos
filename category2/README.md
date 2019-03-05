@@ -3,8 +3,7 @@
 ## Clone the repository
 
 ```bash
-git clone https://github.com/ZackSalah/Kratos.git
-git checkout Adam
+git clone https://github.com/kratos-ai/Kratos.git
 ```
 
 ## Ensure conda and python are installed
@@ -20,7 +19,6 @@ If either of these didn't return a value then install [miniconda](https://docs.c
 
 ```bash
 conda env create -f environment.yml
-source activate Adam
 ```
 
 ## Get the dataset
