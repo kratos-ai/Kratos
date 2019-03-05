@@ -10,15 +10,17 @@ Instructions for the installation of Conda [can be found here](https://conda.io/
 
 ## Setting up a Conda environment
 
-Included in the repository files are `enviroment.yml` files. To setup a Conda environment using one of these files, use the following command line sequence:
+Included in the repository files is an `enviroment.yml` file, contained in `/app/backend/`. To setup a Conda environment using this file, use the following command line sequence:
 
-    conda env create -f <environment.yml>
+    conda env create -f environment.yml
 
 Your Conda environment is now setup. Setup will not need to be run again. To activate your new Conda environment, use the following command:
 
-    conda activate <environment>
+    conda activate BackendEnv
 
-Your Conda environment is now installed and activated. To deactivate the environment, use the following command:
+Your Conda environment is now installed and activated. This environment contains the dependencies for all models in the repository and the UI.
+
+To deactivate the environment, use the following command:
 
     conda deactivate
 
