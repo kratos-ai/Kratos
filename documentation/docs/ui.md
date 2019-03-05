@@ -24,8 +24,8 @@ Technologies
   npm install expo-cli --global
 ```
 
-#### Emulator specific
-* Download and install [Android Studio](https://developer.android.com/studio)
+#### Emulator
+* Download and install [Android Studio](https://developer.android.com/studio).
 
 ### Backend
 #### Anaconda
@@ -35,10 +35,10 @@ Technologies
 * From the [Deep Fashion Dataset Category and Attribute Prediction Benchmark partition](https://drive.google.com/drive/folders/0B7EVK8r0v71pWGplNFhjc01NbzQ) download the following folders:
   * anno
   * eval
-* Add them to the `backend\deep-fashion` folder
+* Add them to the `/app/backend/deep-fashion/` folder
 
 ## Environment installation
-* In the frontend folder you will notice `environment.yml` file. [Create an environment](dependencies.md#setting-up-a-conda-environment) with this `.yml` file.  
+* In the `/app/backend/` folder you will notice `environment.yml` file. [Create an environment](dependencies.md#setting-up-a-conda-environment) with this `.yml` file.  
 	* Note: If you want to make the environment in a specific path, simply add `-p path\environment_name` at the end of the command
 ```
 	conda env create -f environment.yml
@@ -46,13 +46,14 @@ Technologies
 
 ## Lunching backend
 ```
-  source activate installed_environment
-  python run.py
+    conda activate BackendEnv
+    python run.py
 ```
 
 ## Lunching frontend
-* Go to `App\frontend\app\component\ImageUploader\ImageUploader.js` and modify the `apiUrl` variable at line 71 to the backends' url
-* Go back frontend directory and run the frontend
+* Locate your
+* Go to [`/app/frontend/app/component/ImageUploader/ImageUploader.js`](https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js) and modify the `apiUrl` variable at line 71 to the backends' url
+* Return to the `/app/frontend/` directory and run the frontend
 ```
   expo start
 ```
@@ -61,7 +62,7 @@ Technologies
 * Connecting your device to the machine.
 * Activate USB tethering on you mobile device
 * Locate the IP address
-* Go to `App\frontend\app\component\ImageUploader\ImageUploader.js` and modify the `apiUrl` variable at line 71 to mobile device IP
+* Go to `/app/frontend/app/component/ImageUploader/ImageUploader.js` and modify the `apiUrl` variable at line 71 to mobile device IP
 
 ## Connecting an emulator to the UI - pixel 2 preferred
 * Lunch the emulator.
