@@ -392,9 +392,9 @@ Technologies  </p>
 <pre><code>  npm install expo-cli --global
 </code></pre>
 
-<h4 id="emulator-specific">Emulator specific</h4>
+<h4 id="emulator">Emulator</h4>
 <ul>
-<li>Download and install <a href="https://developer.android.com/studio">Android Studio</a></li>
+<li>Download and install <a href="https://developer.android.com/studio">Android Studio</a>.</li>
 </ul>
 <h3 id="backend">Backend</h3>
 <h4 id="anaconda">Anaconda</h4>
@@ -406,11 +406,11 @@ Technologies  </p>
 <li>From the <a href="https://drive.google.com/drive/folders/0B7EVK8r0v71pWGplNFhjc01NbzQ">Deep Fashion Dataset Category and Attribute Prediction Benchmark partition</a> download the following folders:</li>
 <li>anno</li>
 <li>eval</li>
-<li>Add them to the <code>backend\deep-fashion</code> folder</li>
+<li>Add them to the <code>/app/backend/deep-fashion/</code> folder</li>
 </ul>
 <h2 id="environment-installation">Environment installation</h2>
 <ul>
-<li>In the frontend folder you will notice <code>environment.yml</code> file. <a href="../dependencies/#setting-up-a-conda-environment">Create an environment</a> with this <code>.yml</code> file.  <ul>
+<li>In the <code>/app/backend/</code> folder you will notice <code>environment.yml</code> file. <a href="../dependencies/#setting-up-a-conda-environment">Create an environment</a> with this <code>.yml</code> file.  <ul>
 <li>Note: If you want to make the environment in a specific path, simply add <code>-p path\environment_name</code> at the end of the command</li>
 </ul>
 </li>
@@ -419,14 +419,15 @@ Technologies  </p>
 </code></pre>
 
 <h2 id="lunching-backend">Lunching backend</h2>
-<pre><code>  source activate installed_environment
-  python run.py
+<pre><code>    conda activate BackendEnv
+    python run.py
 </code></pre>
 
 <h2 id="lunching-frontend">Lunching frontend</h2>
 <ul>
-<li>Go to <code>App\frontend\app\component\ImageUploader\ImageUploader.js</code> and modify the <code>apiUrl</code> variable at line 71 to the backends' url</li>
-<li>Go back frontend directory and run the frontend</li>
+<li>Locate your</li>
+<li>Go to <a href="https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js"><code>/app/frontend/app/component/ImageUploader/ImageUploader.js</code></a> and modify the <code>apiUrl</code> variable at line 71 to the backends' url</li>
+<li>Return to the <code>/app/frontend/</code> directory and run the frontend</li>
 </ul>
 <pre><code>  expo start
 </code></pre>
@@ -436,7 +437,7 @@ Technologies  </p>
 <li>Connecting your device to the machine.</li>
 <li>Activate USB tethering on you mobile device</li>
 <li>Locate the IP address</li>
-<li>Go to <code>App\frontend\app\component\ImageUploader\ImageUploader.js</code> and modify the <code>apiUrl</code> variable at line 71 to mobile device IP</li>
+<li>Go to <code>/app/frontend/app/component/ImageUploader/ImageUploader.js</code> and modify the <code>apiUrl</code> variable at line 71 to mobile device IP</li>
 </ul>
 <h2 id="connecting-an-emulator-to-the-ui-pixel-2-preferred">Connecting an emulator to the UI - pixel 2 preferred</h2>
 <ul>
