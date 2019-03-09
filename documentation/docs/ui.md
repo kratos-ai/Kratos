@@ -75,25 +75,8 @@ The backend expects a formdata with a image url embedded in it. The Key value is
 
 # UI output
 The output will be a the image taken via camera or from picture library. Then the predictions in text format. The output should be as follows:
-<pre>
-    |           Image           |  
-    |        Predictions        |  
-    |                           |  
-    |        Color: xxxx        |  
-    |                           |  
-    |    Top Five categories:   |  
-    |    1st Model: x,x,x,x,x   |  
-    |    2nd Model: x,x,x,x,x   |  
-    |    3rd Model: x,x,x,x,x   |  
-    |                           |  
-    |         Attributes        |  
-    |      Texture: x,x....     |  
-    |       Fabric: x,x....     |  
-    |        Shape: x,x....     |  
-    |         Part: x,x....     |  
-    |        Style: x,x....     |  
-</pre>
 
+[![UI Output](img/UI_Example.JPG)](img/UI_Example.JPG)
 
 # interpreting data
 The Models for this project is not 100% accurate. The color and category models are about 50% while the attributes are about 10% accurate.
