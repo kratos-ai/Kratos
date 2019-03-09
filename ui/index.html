@@ -395,6 +395,7 @@ Technologies  </p>
 <h4 id="emulator">Emulator</h4>
 <ul>
 <li>Download and install <a href="https://developer.android.com/studio">Android Studio</a>.</li>
+<li>Download and instal <a href="https://facebook.github.io/watchman/docs/install.html">Watchman</a>.</li>
 </ul>
 <h3 id="backend">Backend</h3>
 <h4 id="anaconda">Anaconda</h4>
@@ -425,8 +426,7 @@ Technologies  </p>
 
 <h2 id="lunching-frontend">Lunching frontend</h2>
 <ul>
-<li>Locate your</li>
-<li>Go to <a href="https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js"><code>/app/frontend/app/component/ImageUploader/ImageUploader.js</code></a> and modify the <code>apiUrl</code> variable at line 71 to the backends' url</li>
+<li>Go to <a href="https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js"><code>/app/frontend/app/component/ImageUploader/ImageUploader.js</code></a> and modify the <code>apiUrl</code> variable at line 71 to the backends' url. This will be your machine's local IPv4 address.</li>
 <li>Return to the <code>/app/frontend/</code> directory and run the frontend</li>
 </ul>
 <pre><code>  expo start
@@ -441,7 +441,7 @@ Technologies  </p>
 </ul>
 <h2 id="connecting-an-emulator-to-the-ui-pixel-2-preferred">Connecting an emulator to the UI - pixel 2 preferred</h2>
 <ul>
-<li>Lunch the emulator.</li>
+<li>From within Android Studio, launch an <a href="https://developer.android.com/studio/run/managing-avds">Android emulator</a>.</li>
 <li>Make sure you have your frontend running.</li>
 <li>Go to the cmd where you ran your frontend and press d.</li>
 <li>Once a tab open on the browser, click on run on android device/emulator</li>
@@ -449,25 +449,8 @@ Technologies  </p>
 <h1 id="expected-format">Expected format</h1>
 <p>The backend expects a formdata with a image url embedded in it. The Key value is the photo.</p>
 <h1 id="ui-output">UI output</h1>
-<p>The output will be a the image taken via camera or from picture library. Then the predictions in text format. The output should be as follows:
-<pre>
-    |           Image           |<br />
-    |        Predictions        |<br />
-    |                           |<br />
-    |        Color: xxxx        |<br />
-    |                           |<br />
-    |    Top Five categories:   |<br />
-    |    1st Model: x,x,x,x,x   |<br />
-    |    2nd Model: x,x,x,x,x   |<br />
-    |    3rd Model: x,x,x,x,x   |<br />
-    |                           |<br />
-    |         Attributes        |<br />
-    |      Texture: x,x....     |<br />
-    |       Fabric: x,x....     |<br />
-    |        Shape: x,x....     |<br />
-    |         Part: x,x....     |<br />
-    |        Style: x,x....     |<br />
-</pre></p>
+<p>The output will be a the image taken via camera or from picture library. Then the predictions in text format. The output should be as follows:</p>
+<p><a href="../img/UI_Example.JPG"><img alt="UI Output" src="../img/UI_Example.JPG" /></a></p>
 <h1 id="interpreting-data">interpreting data</h1>
 <p>The Models for this project is not 100% accurate. The color and category models are about 50% while the attributes are about 10% accurate.
 The Category models gives a list of five highest categories. The left most category being the highest and right most is the lowest. Top 5 prediction accuracy is about 90%
