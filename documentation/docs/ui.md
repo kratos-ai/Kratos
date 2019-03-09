@@ -26,6 +26,7 @@ Technologies
 
 #### Emulator
 * Download and install [Android Studio](https://developer.android.com/studio).
+* Download and instal [Watchman](https://facebook.github.io/watchman/docs/install.html).
 
 ### Backend
 #### Anaconda
@@ -51,8 +52,7 @@ Technologies
 ```
 
 ## Lunching frontend
-* Locate your
-* Go to [`/app/frontend/app/component/ImageUploader/ImageUploader.js`](https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js) and modify the `apiUrl` variable at line 71 to the backends' url
+* Go to [`/app/frontend/app/component/ImageUploader/ImageUploader.js`](https://github.com/kratos-ai/Kratos/blob/master/app/frontend/app/components/ImageUploader/ImageUploader.js) and modify the `apiUrl` variable at line 71 to the backends' url. This will be your machine's local IPv4 address.
 * Return to the `/app/frontend/` directory and run the frontend
 ```
   expo start
@@ -65,7 +65,7 @@ Technologies
 * Go to `/app/frontend/app/component/ImageUploader/ImageUploader.js` and modify the `apiUrl` variable at line 71 to mobile device IP
 
 ## Connecting an emulator to the UI - pixel 2 preferred
-* Lunch the emulator.
+* From within Android Studio, launch an [Android emulator](https://developer.android.com/studio/run/managing-avds).
   * Make sure you have your frontend running.
 * Go to the cmd where you ran your frontend and press d.
 * Once a tab open on the browser, click on run on android device/emulator
